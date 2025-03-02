@@ -22,6 +22,140 @@ geit: #8ABFD0
     z-index: 200;
   }
 
+/*** Home Button ***/
+  .home-nav-background {
+    position: fixed;
+    background-image: url("images/Corner_yellow.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 100%;
+    width:50%;
+    height: 0;
+    padding-bottom: 50%;
+    right:0px;
+    top:0px;
+    border: none;
+    background-color: rgba(0,0,0,0);
+    z-index:250;
+  }
+  .homebtn {
+    position: fixed;
+    background-image: url("images/LogoYM_fat_black.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 2px;
+    right: 2px;
+    width: 25%;
+    height: 0;
+    padding-bottom: 11%;
+    cursor: pointer;
+    z-index:260;
+  }
+  /* Home button on hover & focus */
+  .homebtn:hover, .homebtn:focus {
+    background-image: url("images/LogoYM_fat_white.png");
+  }
+
+/*** Menu Button ***/
+  .menubtn {
+    position: absolute;
+    background-image: url("images/menu_btn_black.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 36px;
+    width: 40px;
+    left: 10px;
+    top: 2px;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+  }
+  /* Menu button on hover & focus */
+  .menubtn:hover, .menubtn:focus {
+    background-image: url("images/menu_btn_white.png");
+  }
+
+/*** Menu Content (Hidden by Default) ***/
+  .menu-content {
+    display: none;
+    position: relative;
+    top: 42px;
+    left: 8px;
+    max-width: 200px;
+    border: 2px solid black;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+    z-index: 500;
+  }
+
+  /* hover buttons in the menu */
+  .dropbtn {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    text-align: left;
+    border: none;
+    background-color: white;
+    height: 44px;
+    width: 100%;
+    color: black;
+    padding: 12px 5px 12px 18px;
+    display: block;
+  }
+
+  /* Change color of menu links on hover */
+  .dropbtn:hover {
+    background-color: #e4bd32;
+    font-style: italic;
+  }
+
+/*** Hoverable dropdown menu ***/
+  /* total div */
+  .dropcontent {
+    display: none;
+    position: absolute;
+    left: 44px;
+    border: 2px solid black;
+    min-width: 180px;
+    box-shadow: -10px 0px 4px 0px rgba(0,0,0,0.2);
+  }
+
+  /* dropbutton itself */
+  .dropitem {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    height: 44px;
+    text-align: left;
+    border: none;
+    background-color: white;
+    color: black;
+    padding: 12px 5px 12px 18px;
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  /* Change color of menu links on hover */
+  .dropitem:hover{
+    background-color: #e4bd32;
+    font-style: italic;
+  }
+
+  /* display on hover */
+  .dropdiv:hover .dropcontent {
+    display: block;
+  }
+
+  /* Change color of menu links on hover */
+  .menu-content a:hover {
+    background-color: #e4bd32;
+  }
+  /* Show the menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {
+    display:block;
+  }
+ /* End dropdown box */
+
 /*** Navigation path ***/
 /* don't show on small screen */
   .nav-path {
@@ -55,7 +189,7 @@ geit: #8ABFD0
     }
     .nav-path a {
       color: black;
-      padding: 0px 10px 0px 5px;
+      padding: 0px 2px 0px 2px;
       text-decoration: none;
       display: inline-block;
     }
