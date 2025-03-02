@@ -3,6 +3,12 @@
 .input {
 	text-align: right;
 }
+/* header in topbar: */
+.header {
+	font-weight: bold;
+	/*text-align: center;*/
+	margin-top: 3px;
+}
 /* title in paragraph; within input */
 .title {
 	font-weight: bold;
@@ -10,6 +16,11 @@
 /* text in paragraph, under title; within input */
 .subtitle {
 	color: dimgray;
+}
+
+/* Afbeelding over volledige breedte */
+img {
+    max-width:80%;
 }
 
 /* Non-mobile, grid */
@@ -20,7 +31,7 @@
 	}
   }
 
-/* Content eerst verbergen */
+/* Content eerst verbergen, en openklappen */
 .content {
     display: none;
 }

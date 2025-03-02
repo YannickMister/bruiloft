@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Yannick Mister's about me-page</title>
+	<!-- Responsive viewport tag, tells small screens that it's responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/float-grid.css" />
+	<link rel="stylesheet" href="css/navbar.css" />
+	<link rel="stylesheet" href="css/main.css" />
+	<link rel="stylesheet" href="css/footer.css" />
+	<!-- Google Font -->
+	<!-- font-family: 'Lora', serif;
+		font-family: 'Droid Serif', serif;
+		font-family: 'Crimson Text', serif; -->
+	<link href="https://fonts.googleapis.com/css?family=Amico|Nunito+Sans:200i,300i,400,800i|Lora:400,400i" rel="stylesheet">
+	<!-- Javascript -->
+	<script src="java/myscripts.js"></script>
+</head>
+
+<body>
+<!-- the navigation bar -->
+  	<header class="top-nav"> 
+	<!-- the menu button -->
+    	<button onclick="myFunction()" class="menubtn"></button>
+		<div id="myMenu" class="menu-content">
+			<div class="dropdiv">
+				<button class="dropbtn firstbtn">Personal info</button>
+				<div class="dropcontent">
+					<a href="http://www.yannickmister.me/about_me" class="first dropitem">About me</a>
+					<a href="http://www.yannickmister.me/curriculum_vitae/" class="rest dropitem">Curriculum Vitae</a>
+					<a href="#" class="rest dropitem">Coming soon..</a> <!-- contact info -->
+				</div>
+			</div>
+			<div class="dropdiv">
+				<button class="dropbtn">School projects</button>
+				<div class="dropcontent"> <!-- python? R? ArcMap?-->
+					<a href="http://yannickmister.me/gis_for_society/" class="first dropitem">GIS for Society</a>
+					<a href="#" class="first dropitem">Coming soon..</a>
+					<a href="#" class="rest dropitem">Coming soon..</a>
+				</div>
+			</div>
+			<div class="dropdiv">
+				<button class="dropbtn">Free time projects</button>
+				<div class="dropcontent"> <!-- Speaker? Website? Fiets? AppleMusic vs Spotify? -->
+					<a href="#" class="first dropitem">Annick time!</a>
+					<a href="#" class="rest dropitem">Annick time!</a>
+					<a href="#" class="rest dropitem">Annick time!!!</a>
+				</div>
+			</div>
+		</div>
+	<!-- the home button -->
+		<div class="home-nav-background"></div>
+		<a class="homebtn" href="http://www.yannickmister.me"></a>	
+	<!-- the page-path, with links -->
+		<p class="nav-path">
+			<a href="http://www.yannickmister.me">> Home</a>
+			<a href="http://www.yannickmister.me/about_me">> About me</a>
+		</p>
+  	</header>
+	
+	<!-- main body -->
+  	<main>
+  		<div class="row">
+  			<div class="col-12">
+				<img class="portret" src="css/images/Portretfoto.JPG" alt="Profile picture">
+				<h1>About me</h1>
+  				<h4>My name is Yannick Mister. I'm an aspiring (mainly Geo-related) coder. I love Annick.</h4>
+				<h5>My bachelors study started in 2012, at the <p class="a">Wageningen University and Research Centre</p>. 
+					Living far below sea level, and close to water, hydrology always had my interest.
+					Therefore I studied <p class="a">Soil, Water, Atmosphere</p>. Soon enough, during this study, I came in contact with
+					<p class="a">GIS</p>, and this opened a whole new world to me. Being able to create maps myself, choosing what data 
+					to show, and how, triggered something in me; I started following more courses on the subject, and even started 
+					teached for a while. By the time I finished my bachelors, and now I am proud to say that I am studying for a Master of Science degree in
+					Geo-Information Sciences. And I love it!</h5>
+			</div>
+  		</div>
+		<div class="row final">
+			<div class="col-6">
+				<h2>Coding Skills</h2>
+				<h4>In order of level of experience</h4>
+				<!-- Below is a list: -->
+				<ul>
+					<li>R</li>
+					<li>Python</li>
+					<li>Java</li>
+					<li>HTML</li>
+					<li>CSS</li>
+				</ul>
+			</div>
+			<div class="col-6 final"><h2>My Home Adress</h2>
+				<h4>Since I started studying at the WUR, I am living in Wageningen. 
+					See the map below to find out where it is.</h4>
+				<iframe src="Wageningen.html" height=300vw width=100%></iframe></div>
+		</div>
+		
+		<!-- footer -->
+		<div class="footer">This website is created by Yannick 'Mister'. The skills I used to create this website are mainly learned from the
+			3-month <a href="https://www.thinkful.com/courses/learn-web-development-online/Thinkful">Thinkful web-design course</a>, supplemented with solutions I got from <a href = "https://www.w3schools.com">W3-Schools</a>. Both of them proved very useful in learning
+			web-design. The Mountains in the logo I created are <a href="http://www.freepik.com">designed by Freepik</a>. All other pictures and images are taken or designed by myself. Thanks for visiting!</div>
+  	</main>
+
+</body>
+
+</html>
