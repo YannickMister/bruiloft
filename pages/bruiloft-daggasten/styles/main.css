@@ -1,0 +1,34 @@
+
+/* all input, under each date  */
+.input {
+	text-align: right;
+}
+/* title in paragraph; within input */
+.title {
+	font-weight: bold;
+}
+/* text in paragraph, under title; within input */
+.subtitle {
+	color: dimgray;
+}
+
+/* Non-mobile, grid */
+  @media only screen and (min-width: 640px) {
+	/* all input, under each date  */
+	.input {
+		text-align: left;
+	}
+  }
+
+/* Content eerst verbergen */
+.content {
+    display: none;
+}
+
+.topheader {
+    cursor: pointer;
+}
+
+.topheader:hover {
+    background-color: #ddd;
+}
