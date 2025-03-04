@@ -23,6 +23,18 @@ img {
     max-width:80%;
 }
 
+/* Header verwijderen van kaart */
+.i4ewOd-pzNkMb-haAclf {
+	display: none;
+}
+#map-canvas > *:nth-child(1) {
+    display: none;
+}
+
+#mapcanvas > * {
+    display: none;
+}
+
 /* Non-mobile, grid */
   @media only screen and (min-width: 640px) {
 	/* all input, under each date  */
